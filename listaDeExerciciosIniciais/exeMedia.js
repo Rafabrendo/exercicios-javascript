@@ -9,7 +9,7 @@ Classificação:
 - Média acima de 7, passou de semestre; 
 */
 
-const nota01 = 5.2;
+const nota01 = 7.2;
 const nota02 = 7.5;
 const nota03 = 5.4;
 
