@@ -22,7 +22,23 @@ var altura = 1.77;
 const imc = (peso / Math.pow(altura, 2)).toFixed(2);
 
 
-function condicao(imc){
+// function condicao(imc){
+//     if (imc < 18.5) {
+//         return "Abaixo do peso";
+        
+//     } else if (imc < 25) {
+//         return "Peso normal";
+//     } else if (imc < 30){
+//         return "Acima do peso";
+//     } else if (imc < 40){
+//         return "Obeso"
+//     } return "Obesidade grave";
+    
+// }
+
+//Passei uma função como parâmetro para outra.
+function condicao(imc2){
+    let imc = imc2;
     if (imc < 18.5) {
         return "Abaixo do peso";
         
@@ -37,16 +53,26 @@ function condicao(imc){
 }
 
 function imc2(peso, altura){
-    return imc2 = (peso / Math.pow(altura, 2)).toFixed(2);;
+    return (peso / Math.pow(altura, 2)).toFixed(2);
 }
 
 // let numero = Math.pow(2, 2);
 // console.log(condicao(imc))
 
 function main(){
-    let imc1 = imc2(150.5, 1.77);
-    let resultado = condicao(imc1);
-    console.log(resultado);
+    // let imc1 = imc2(150.5, 1.77);
+    // let resultado = condicao(imc1);
+    // console.log(resultado);
+    console.log(condicao(imc2(150.2, 1.77)));
+    
 }
+
+(function () {
+    // const result = condicao(imc2(150.2, 1.77));
+    // console.log(result);
+    console.log(condicao(imc2(150.2, 1.77)));
+    
+})();
+//função imediatamente invocada. Ela vai criar o que está dentro e executar. Executada imediatamente após a sua invocação
 
 main();
