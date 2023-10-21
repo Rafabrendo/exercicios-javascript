@@ -24,17 +24,29 @@ const imc = (peso / Math.pow(altura, 2)).toFixed(2);
 
 function condicao(imc){
     if (imc < 18.5) {
-        return "Abaixo do peso"
+        return "Abaixo do peso";
         
     } else if (imc < 25) {
-        return "Peso normal"
+        return "Peso normal";
     } else if (imc < 30){
-        return "Acima do peso"
+        return "Acima do peso";
     } else if (imc < 40){
         return "Obeso"
-    } return "Obesidade grave"
+    } return "Obesidade grave";
     
 }
 
+function imc2(peso, altura){
+    return imc2 = (peso / Math.pow(altura, 2)).toFixed(2);;
+}
+
 // let numero = Math.pow(2, 2);
-console.log(condicao(imc))
+// console.log(condicao(imc))
+
+function main(){
+    let imc1 = imc2(150.5, 1.77);
+    let resultado = condicao(imc1);
+    console.log(resultado);
+}
+
+main();
