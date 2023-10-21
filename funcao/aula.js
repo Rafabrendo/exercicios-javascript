@@ -28,5 +28,17 @@ var numero = quadrado; //passei a função para a variavel
 var numero2 = quadrado(2); //Passei o valor da função, com valor, para a variavel
 
 
-console.log(numero(2))
-console.log(numero2)
+console.log(numero(2));
+console.log(numero2);
+
+console.log(numero(2) + numero(2));
+
+
+//É uma forma de organizar as funções:
+//Essa função principal e dentro dela, será chamado as outras funções.
+function main(){
+    console.log("Programa principal");
+    quadrado(5);
+}
+
+main();
