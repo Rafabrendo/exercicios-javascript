@@ -17,13 +17,21 @@ console.log("- À vista Débito, reebe 10% de desconto\n"
             + "- Acima de duas vezes, preço normal de etiqueta mais juros de 10%");
 
 
+function desconto(product, desconto){
+    // return product * desconto;
+    return product * (1 - desconto/100);
+}
+
 
 function condicao(valor){
     if(valor === "Débito"){
-        return produto * 0.9;
+        // return produto * 0.9;
+        // return desconto(produto, 0.9);
+        return desconto(produto, 10);
     } 
-    else if(valor === "Dinheiro"){
-        return produto * 0.85;
+    else if(valor === "Dinheiro" || valor === "PIX"){
+        // return desconto(produto, 0.85);
+        return desconto(produto, 15)
     } else if(valor === "2x"){
         return produto;
     }
@@ -31,4 +39,4 @@ function condicao(valor){
 
 }
 
-console.log(condicao(""))
+console.log(condicao("PIX"))
