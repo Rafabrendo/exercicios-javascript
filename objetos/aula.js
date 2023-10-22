@@ -11,7 +11,7 @@
 //Objeto Literal{}
 
 //Coleção dinâmica de dados  //Chave, valor
-const rafa = {
+const pessoa = {
     nomeCompleto: 'Rafael Brendo',
     idade: 25,
 
@@ -20,22 +20,32 @@ const rafa = {
     }
 };
 
-console.log(rafa.nomeCompleto);
-console.log(rafa.idade);
-console.log(rafa);
+console.log(pessoa.nomeCompleto);
+console.log(pessoa.idade);
+console.log(pessoa);
 
 //incrementando // adicionando propriedade ao objeto.
-rafa.altura = 1.79;
-console.log(rafa.altura);
-console.log(rafa)
+pessoa.altura = 1.79;
+console.log(pessoa.altura);
+console.log(pessoa)
 
 
-delete rafa.altura;
-console.log(rafa)
+delete pessoa.altura;
+console.log(pessoa)
 
-rafa.descrever();
+pessoa.descrever();
 
 //Sobrescrevendo o método
-rafa.descrever = function(){
+pessoa.descrever = function(){
     console.log(`Meu nome é ${this.nomeCompleto}`)
 }
+
+const atributo = 'idade'; //é uma string, que tem o valor 'idade'
+
+console.log(pessoa['idade'])
+console.log(pessoa[atributo])
+
+pessoa['nomeCompleto'] = 'teste';
+console.log(pessoa.nomeCompleto)
+pessoa.nomeCompleto = 'rafa';
+console.log(pessoa.nomeCompleto)
