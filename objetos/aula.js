@@ -13,7 +13,11 @@
 //Coleção dinâmica de dados  //Chave, valor
 const rafa = {
     nomeCompleto: 'Rafael Brendo',
-    idade: 25
+    idade: 25,
+
+    descrever: function (){
+        console.log(`Meu nome é ${this.nomeCompleto}, e minha idade é ${this.idade}`);
+    }
 };
 
 console.log(rafa.nomeCompleto);
@@ -28,3 +32,10 @@ console.log(rafa)
 
 delete rafa.altura;
 console.log(rafa)
+
+rafa.descrever();
+
+//Sobrescrevendo o método
+rafa.descrever = function(){
+    console.log(`Meu nome é ${this.nomeCompleto}`)
+}
