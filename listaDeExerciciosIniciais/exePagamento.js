@@ -22,6 +22,9 @@ function desconto(product, desconto){
     return product * (1 - desconto/100);
 }
 
+function juros(product){
+    return product * 1.1;
+}
 
 function condicao(valor){
     if(valor === "Débito"){
@@ -35,8 +38,8 @@ function condicao(valor){
     } else if(valor === "2x"){
         return produto;
     }
-    return produto * 1.1;
+    return juros(produto);
 
 }
 
-console.log(condicao("PIX"))
+console.log(condicao(""))
