@@ -19,3 +19,12 @@ const rafa = {
 console.log(rafa.nomeCompleto);
 console.log(rafa.idade);
 console.log(rafa);
+
+//incrementando // adicionando propriedade ao objeto.
+rafa.altura = 1.79;
+console.log(rafa.altura);
+console.log(rafa)
+
+
+delete rafa.altura;
+console.log(rafa)
