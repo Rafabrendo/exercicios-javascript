@@ -10,4 +10,8 @@ class Pessoa{
 
 const rafa = new Pessoa(); //É uma instância 
 
+rafa.nome = "Rafael Brendo"
+rafa.idade = 25;
+
 console.log(rafa)
+rafa.descrever();
