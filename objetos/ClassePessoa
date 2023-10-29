@@ -1,0 +1,13 @@
+class Pessoa{
+    nome;
+    idade;
+
+    //Quando eu declaro o metodo dentro da classe, eu não preciso da sintaxe Function
+    descrever(params) {
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`)
+    }
+}
+
+const rafa = new Pessoa(); //É uma instância 
+
+console.log(rafa)
