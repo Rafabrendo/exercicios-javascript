@@ -22,6 +22,20 @@ class Pessoa{
         return (this.peso / Math.pow(this.altura, 2)).toFixed(2)
     }
 
+    classificacaoIMC(){
+        if(this.IMC() < 18.5){
+            return "Baixo peso";
+        } else if (this.IMC() < 24.9){
+            return "Eutrofia(Peso adequado)"
+        }else if (this.IMC() < 34.9){
+            return "Obesidade grau 1"
+        }else if (this.IMC() < 39.9){
+            return "Obesidade grau 2"
+        }else{
+            return "Obesidade extrema"
+        }
+    }
+
     toString(){
         console.log(`Eu sou o ${this.nome}, peso ${this.peso}kg, tenho ${this.altura} e meu imc é de ${this.IMC()}`)
     }
@@ -31,3 +45,4 @@ class Pessoa{
 Jose = new Pessoa("José", 70, 1.75)
 // console.log(Jose.toString())
 Jose.toString()
+console.log(Jose.classificacaoIMC())
