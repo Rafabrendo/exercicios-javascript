@@ -23,13 +23,14 @@ class Pessoa{
     }
 
     classificacaoIMC(){
-        if(this.IMC() < 18.5){
+        const imc = this.IMC()
+        if(imc < 18.5){
             return "Baixo peso";
-        } else if (this.IMC() < 24.9){
+        } else if (imc < 24.9){
             return "Eutrofia(Peso adequado)"
-        }else if (this.IMC() < 34.9){
+        }else if (imc < 34.9){
             return "Obesidade grau 1"
-        }else if (this.IMC() < 39.9){
+        }else if (imc < 39.9){
             return "Obesidade grau 2"
         }else{
             return "Obesidade extrema"
