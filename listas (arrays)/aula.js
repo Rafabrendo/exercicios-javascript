@@ -33,3 +33,10 @@ console.log('\n'+removed)
 
 const removePrimeiro = alunos.shift();
 console.log('\n'+removePrimeiro);
+
+console.log(alunos)
+
+//.splice()
+alunos.splice(0, 0, 'Raf@')
+
+console.log(alunos)
