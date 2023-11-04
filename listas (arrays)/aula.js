@@ -30,3 +30,6 @@ alunos.forEach(function(alunos){
 });
 
 console.log('\n'+removed)
+
+const removePrimeiro = alunos.shift();
+console.log('\n'+removePrimeiro);
