@@ -16,3 +16,17 @@ console.log(alunos)
 alunos.forEach(function(alunos){
     console.log(alunos);
 });
+
+alunos.push('Rafildes')
+
+alunos.forEach(function(alunos){
+    console.log(alunos)
+});
+
+const removed = alunos.pop(); //remove e retorna o último elemento
+console.log(removed)
+alunos.forEach(function(alunos){
+    console.log(alunos)
+});
+
+console.log('\n'+removed)
