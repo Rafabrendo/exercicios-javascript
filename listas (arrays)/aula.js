@@ -39,4 +39,4 @@ console.log(alunos)
 //.splice()
 alunos.splice(0, 0, 'Raf@')
 
-console.log(alunos)
+console.log(alunos.length)
