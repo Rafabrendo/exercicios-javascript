@@ -26,3 +26,8 @@ console.log(nome)
 print(get());
 
 console.log(get())
+
+import { minhaFuncao } from './teste';
+
+let resultado = minhaFuncao('Raf@');
+console.log(resultado);
