@@ -29,3 +29,10 @@ for (let i = 0; i < 5; i++) {
 // }
 
 console.log(maiorValor)
+
+//Testando sem declarar o let
+num1 = 10;
+num2 = 5;
+
+result = num1/num2
+console.log(result)
