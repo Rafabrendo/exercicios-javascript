@@ -15,3 +15,8 @@ rafa.idade = 25;
 
 console.log(rafa)
 rafa.descrever();
+
+// iterando sobre o objeto
+for(const propriedade in rafa){
+    console.log(`${propriedade}:  ${rafa[propriedade]}`);
+};
