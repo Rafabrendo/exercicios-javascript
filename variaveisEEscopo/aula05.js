@@ -6,7 +6,7 @@
     undefined
     number
     string
-    synbol
+    symbol
  */
 
  //object
