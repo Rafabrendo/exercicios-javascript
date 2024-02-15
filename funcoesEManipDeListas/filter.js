@@ -6,7 +6,7 @@ const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const listaDeNumerosPares = lista.filter((element, i, listRef) => {
     return (element % 2 === 0)
-}) //Estou criando uma nova lista, e isso difere do forEach porque o forEach só percorre.
+}); //Estou criando uma nova lista, e isso difere do forEach porque o forEach só percorre.
 
 console.log(listaDeNumerosPares)
 
