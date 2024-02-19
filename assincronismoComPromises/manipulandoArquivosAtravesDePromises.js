@@ -1,4 +1,16 @@
 
+/**
+    fs -> É um módulo embutido(parte da biblioteca padrão) em Node.js que fornece funcionalidades para interagir com o sistema de arquivos do SO.
+    Ele permite que você realize uma variedade de operações de entrada e saída relacionadas a arquivos, como leitira, gravação, renomeação, exclusão, entre outros.
+
+    Ele precisa ser importado:
+    const fs = require('fs')
+
+    Utilizando com promises
+
+    fs.promises
+
+ */
 
 const fs = require('fs')
 
