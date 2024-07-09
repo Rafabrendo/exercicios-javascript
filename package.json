@@ -1,0 +1,20 @@
+{
+  "name": "exe-javascript",
+  "version": "1.0.0",
+  "description": "## Objetivo: <P>Estudar e revisar conceitos de JavaScript por meio de exercícios.</P>",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafabrendo/exercicios-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafabrendo/exercicios-javascript/issues"
+  },
+  "homepage": "https://github.com/Rafabrendo/exercicios-javascript#readme"
+}
